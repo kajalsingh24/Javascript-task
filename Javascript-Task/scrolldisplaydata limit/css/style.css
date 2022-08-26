@@ -1,0 +1,30 @@
+body
+{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      background-color: lavender; 
+      box-sizing: border-box;   
+      width: 1200px;           
+      justify-content: center;
+      text-align: center;      
+}
+img{
+ width: 100%;                             
+}
+
+#main
+{
+ background-color: lightcoral;                             
+}
+.subdiv
+{
+      background-color: grey;
+}
+.fourth
+{
+font-size: 12px;
+}
+dd{
+padding: 20px;      
+}

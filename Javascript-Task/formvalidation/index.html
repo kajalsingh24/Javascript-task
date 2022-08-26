@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                              <meta charset="UTF-8">
+                              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                              <title>Document</title>
+                              <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- <h1>Form validation </h1> -->
+   <div id="container">
+   <form action="" name="myform" onsubmit=" return validation()" onkeyup="return validation()"
+    onchange=" return validation()" onblur="return validation()">
+        <div class="form-group">
+      <label for="username">username</label><br>
+     <input type="text" name="" id="username" placeholder="Username">  
+     <span id="usererror"></span>
+     </div>
+
+
+     <div class="form-group">
+      <label for="E-maill">Email</label> <br>
+     <input type="text" name="" id="email" placeholder="E-mail">   
+     <span id="emailerror"></span>
+     </div>
+
+
+     <div class="form-group">
+      <label for="number">Number</label> <br>
+     <input type="Number" name="" id="number"placeholder="Phoen-number">   
+     <span id="numbererror"></span>
+     </div>
+       <label for="gender">Gender</label><br>
+     
+       <input type="radio" name="container" value="Male">Male</input>
+       <input type="radio" name="container" value="Female">Female</input>    
+       <input type="radio" name="container" value="Other">Other</input> 
+     <span id="m2"></span><br>
+
+
+      <label for="">Select city</label><br>
+     <select id="color">  
+      <option value="" hidden>select city</option> 
+      <option value="VADODARA">VADODARA</option>  
+      <option value="ANANAD">ANANAD</option>  
+      <option value="JAMNAGAR">JAMNAGAR</option>  
+      <option value="SURAT">SURAT</option>  
+      </select>  
+      <span id="selecterror"></span><br>
+      <!-- --------------checkbox--------------- -->
+   
+      <input id="green" type="checkbox" value="Javascript"  name="language">
+      <label for="Javascript">Javascript</label>
+ 
+    
+      <input id="pink" type="checkbox" value="python"  name="language">
+      <label for="python">python</label>
+
+
+      <input id="yellow" type="checkbox" value="Noed.js"  name="language"> 
+      <label for="Noed.js">Noed.js</label>
+ 
+ 
+     
+      <input id="black" type="checkbox" value="Black" name="language">
+      <label for="black">Black</label>
+      <span id="ch"></span><br>
+      <input type="submit">
+   </form> 
+</div>
+<script src="main.js"></script>
+
+
+
+</body>
+</html>

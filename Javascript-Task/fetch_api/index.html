@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                              <meta charset="UTF-8">
+                              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                              <title>Document</title>
+                              <script src="https://kit.fontawesome.com/78b41f4788.js" crossorigin="anonymous"></script>
+</head>
+<style>
+   table, th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+img{
+width: 100px;                              
+}  
+</style>
+<body>
+   <table id="table">
+      <thead>
+        <tr class="tr2">
+          <th>id</th>
+          <th>title</th>
+          <th>description</th>
+          <th>price</th>
+          <th>image</th>
+          <th>operation</th>
+        </tr>
+      </thead>
+      <tbody id="tableprint">
+      </tbody>
+    </table>       
+   <script>
+       fetch('https://fakestoreapi.com/products')
+       .then(response =>response.json())
+       .then(data =>{
+        display(data)
+         // console.log(data[0].username);
+       });
+         function display(data)
+         {
+          let tabledata="";
+         for(x of data)
+         {
+          tabledata+=`<tr>
+          <td>${x.id}</td>
+          <td>${x.title}</td>
+          <td>${x.description}</td>
+          <td>${x.price}</td>
+        
+          <td><img src="${x.image}"></td>
+          <td><button id="deletbtn" onclick="deletbtn(this)"class="deletbtn">Delet</button></td>
+          </tr>`;  
+         }
+         document.getElementById("tableprint").innerHTML=tabledata;
+       }      
+       function deletbtn(data)
+        {
+          var s=data.parentNode.parentNode;
+          console.log(s);
+          s.parentNode.deleteRow(data);
+          // display();
+        }
+   </script>                           
+</body>
+</html>

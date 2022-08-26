@@ -1,0 +1,31 @@
+
+body
+{
+ background-color:lightgreen;                            
+}  
+.wrapper
+{
+width: 400px;
+margin: 40px auto; 
+padding: 10px;
+border-radius: 5px;
+background-color:lavender;                             
+}  
+input[type="text"]
+{
+  padding: 10px 20px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 5px;
+  background: none;
+  width: 274px;
+  color: black;                           
+}   
+input[type="text"]:focus
+{
+  outline: none;                           
+}   
+.remove_more_field         
+{
+ float: right;                         
+}                 
